@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+image: images/footer.jpg
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts:</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <li>
+        <span class="post-meta">{{ post.date | date:  "%d/%m/%Y" }} - {{ post.author }}</span>
+        <br>
+          <p class="title">{{ post.title }}</p>
+          <p class="description">{{ post.description | truncate:140 }}</p>
+      </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+</div>

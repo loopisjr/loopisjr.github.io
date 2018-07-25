@@ -1,0 +1,91 @@
+header{
+  height:500px !important;
+}
+
+header img{
+  width:70%;
+}
+
+#about {
+  text-align: justify;
+}
+
+#about p, #about h5{
+  top:0px;
+  padding:0px;
+  margin:0px;
+}
+
+#about h5{
+  margin:0;
+}
+
+.depoimento{
+  padding:30px;
+  box-shadow: 1px 1px 4px #989da0;
+  margin:30px 0px;
+  text-align: justify;
+}
+
+.depoimento > *{
+  display: inline;
+}
+
+.depoimento img{
+  width: 150px;
+  border-radius: 100%;
+}
+
+.team {
+	padding-bottom: 10px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
+  background:#010D25;
+  height:400px;
+  box-shadow: 1px 1px 4px #e8f1f7;
+}
+
+.team .func-mes.winner{
+  color:#fcf20e;
+  background-color: black;
+}
+
+.team .func-mes.honor{
+  color:#fcf20e;
+  background-color: rgb(245, 234, 234);
+}
+
+.team .cover .overlay {
+	height: 250px;
+	padding-top: 60px;
+	opacity: 0;
+	background: #E21211;
+	-webkit-transition: opacity 0.45s ease;
+	transition: opacity 0.45s ease;
+}
+
+.team a{
+  font-size: 20px;
+  margin:10px;
+	color:#edf5fa;
+}
+
+.team:hover .cover .overlay {
+	opacity: 1;
+}
+
+.team .avatar {
+	position: relative;
+	z-index: 2;
+	margin-top: 20px;
+	border-radius: 100%;
+  width:150px;
+	height: 150px;
+}
+
+.team .title {
+	margin: 50px 0;
+}
+
+.team .funcoes{
+  text-align: justify;
+}

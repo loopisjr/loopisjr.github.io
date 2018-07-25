@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="post">
+
+  <div class="post-header">
+    <p class="post-meta">{{ page.date | date: " %-d de %b de %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <br><br>
+    <div class="a2a_kit a2a_kit_size_24 a2a_default_style">
+    <a class="a2a_button_facebook a2a_counter"></a>
+    <a class="a2a_button_twitter a2a_counter"></a>
+    <a class="a2a_button_google_plusone a2a_counter" style="width:85px"></a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share_save"></a>
+</div>
+
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+  </div>
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  {% if page.comments == true %}
+	  <div class="post-comments">{% include comments.html %}</div>
+	{% endif %}
+</div>

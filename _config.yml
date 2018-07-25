@@ -1,0 +1,14 @@
+# Site settings
+title: Recursive Jr
+email: contato@recursive.com.br
+description: Recursive Jr é uma empresa junior do curso de Análise e Desenvolvimento de Sistemas do IFPB - Campus Cajazeiras
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://recursive.com.br/" # the base hostname & protocol for your site
+twitter_username: recursivejr
+github_username:  recursivejr
+absolute_url: http://recursive.com.br/
+image_posts_default: images/footer.jpg
+key_words: recursive, software, developer
+
+# Build settings
+markdown: kramdown

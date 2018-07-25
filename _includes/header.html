@@ -1,0 +1,45 @@
+<div class="preloader">
+  <img src="{{ "images/loader.gif" | prepend: site.url }}" alt="Preloader image">
+</div>
+<nav class="navbar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="{{ "images/nav-logo.png" | prepend: site.url }}" data-active-url="{{ "images/iconSite.png" | prepend: site.url }}" alt=""></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right main-nav">
+        <li><a href="/index.html">Site</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/equipe.html">Equipe</a></li>
+        <li><a href="/portfolio/index.html">Portfólio</a></li>
+        <li><a href="/historia.html">História</a></li>
+        <li><a href="/arquivos.html">Arquivos</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<header id="intro" style="background:url({{site.url}}/{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %});">
+  <div class="container">
+    <div class="table">
+      <div class="header-text">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img src="{{ "images/logo-section1.png" | prepend: site.url }}" alt="Recursive Jr"><br><br>
+            <h2 class="white typed">{% if page.title %}{{ page.title }}{% else %}{{ "Blog" }}{% endif %}</h2>
+            <span class="typed-cursor">|</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
