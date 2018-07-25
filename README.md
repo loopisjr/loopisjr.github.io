@@ -1,2 +1,2 @@
-# recursivejr.github.io
+# loopisjr.github.io
 Recursive's github page
